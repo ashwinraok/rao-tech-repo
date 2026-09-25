@@ -4,4 +4,6 @@ total = num1 + num2
 print(f"The sum is: {total}")
 
 a=5
-a=6
+b=6
+c=7
+d=8
