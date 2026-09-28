@@ -1,4 +1,4 @@
-num1 = 5
+num1 = 10
 num2 = 10
 total = num1 + num2
 print(f"The sum is: {total}")
