@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws Pet Shop</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fffaf4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff914d;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            background: linear-gradient(135deg, #fff0df, #ffe0c2);
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 span {
+            color: #ff6b35;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff6b35;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #e85b28;
+        }
+
+        .pet-image {
+            font-size: 180px;
+        }
+
+        .products {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .products > p {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .product-icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #ff6b35;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .about {
+            background-color: #333;
+            color: white;
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+            color: #ddd;
+        }
+
+        footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .pet-image {
+                font-size: 120px;
+                margin-top: 30px;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🐾 Happy Paws</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Everything Your <span>Pet Needs</span> 🐾</h1>
+
+            <p>
+                Welcome to Happy Paws Pet Shop!
+                Find premium food, toys, accessories and everything
+                your furry friends need to stay happy and healthy.
+            </p>
+
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+
+        <div class="pet-image">
+            🐶🐱
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <p>Everything you need for your lovely pets.</p>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <div class="product-icon">🦴</div>
+                <h3>Pet Food</h3>
+                <p>Healthy and nutritious food for your pets.</p>
+                <div class="price">Starting ₹299</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🎾</div>
+                <h3>Pet Toys</h3>
+                <p>Fun and exciting toys to keep your pets active.</p>
+                <div class="price">Starting ₹149</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🛏️</div>
+                <h3>Pet Beds</h3>
+                <p>Comfortable beds for your furry companions.</p>
+                <div class="price">Starting ₹599</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🐕</div>
+                <h3>Dog Accessories</h3>
+                <p>Collars, leashes and accessories for dogs.</p>
+                <div class="price">Starting ₹199</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🐈</div>
+                <h3>Cat Accessories</h3>
+                <p>Everything your cat needs for a happy life.</p>
+                <div class="price">Starting ₹249</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🧴</div>
+                <h3>Pet Grooming</h3>
+                <p>Shampoo, brushes and grooming products.</p>
+                <div class="price">Starting ₹199</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Why Choose Happy Paws?</h2>
+
+        <p>
+            We care about your pets as much as you do.
+            Happy Paws provides quality pet products at affordable prices.
+            Our goal is to make every pet healthy, happy and comfortable.
+        </p>
+    </section>
+
+    <footer id="contact">
+        <p>📍 Coimbatore, Tamil Nadu | 📞 +91 98765 43210</p>
+        <p>© 2026 Happy Paws Pet Shop. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
