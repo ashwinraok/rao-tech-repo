@@ -4,7 +4,7 @@ pipeline{
       stage('bulid'){
         steps{
            sh """
-             sudo cat index.html > /var/www/html/index.nginx-debian.html/
+             sudo cat index.html > /var/www/html/index.nginx-debian.html
            """
        }
 }
